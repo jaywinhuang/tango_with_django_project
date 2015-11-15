@@ -1,0 +1,7 @@
+{% if cat_list %}
+    {% for cat in cat_list %}
+        <ul class="nav nav-sidebar">
+            <li><a href="{% url 'category' cat.slug %}">{{ cat.name }}</a></li>
+        </ul>
+    {% endfor %}
+{% endif %}
